@@ -124,11 +124,22 @@ input#open {
 
 .text-one {
   position: absolute;
-  color: #f1efb8;
-  font-size: 30px;
+  color: #f0edad;
+  font-size: 20px;
   top: 30px;
   width: 300px;
   text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-two {
+  position: absolute;
+  color: #bb0a0a;
+  font-size: 20px;
+  top: 122px;
+  width: 300px;
+  text-align: center;
+  text-shadow: 2px 2px 0px #570909, 4px 4px 0px #2e0202;
 }
 
 .text-one:before,
@@ -143,11 +154,14 @@ input#open {
   content: "Valentine's";
   top: 30px;
   color: #f8eeee;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.text-one:after {
+.text-one::after {
   content: "day!";
+  white-space: pre;
   top: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .heart {
@@ -155,7 +169,7 @@ input#open {
   background-color: #650707;
   height: 60px;
   width: 60px;
-  top: 180px;
+  top: 195px;
   left: 120px;
   transform: rotate(-45deg);
   animation: 0.8s beat infinite;
@@ -185,10 +199,10 @@ input#open {
   position: absolute;
   width: 30px;
   height: 15px;
-  background-color: #c3062c;
+  background-color: #bb0a0a;
   z-index: 1;
   border-radius: 0 0 100px 100px;
-  top: 203px;
+  top: 210px;
   left: 135px;
   overflow: hidden;
 }
@@ -200,7 +214,7 @@ input#open {
   width: 10px;
   height: 10px;
   z-index: 1;
-  top: 188px;
+  top: 195px;
   left: 165px;
   box-shadow: -40px 0 #f7edee;
   transform-origin: 50%;
